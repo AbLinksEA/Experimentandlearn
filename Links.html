@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 Mis Fuentes - Estilo Dark</title>
+    <style>
+        /* --- ESTILOS CSS PARA UN LOOK 'CANVA DARK' --- */
+        :root {
+            --color-bg-dark: #1E1E28; /* Fondo principal oscuro (casi negro) */
+            --color-bg-card: #2B2B38; /* Fondo de tarjetas o elementos */
+            --color-text-light: #F0F0F5; /* Texto principal claro */
+            --color-text-secondary: #AAAAAA; /* Texto secundario gris */
+            --color-accent-purple: #906AD3; /* Morado de acento (similar a Canva) */
+            --color-accent-hover: #A788E7; /* Morado claro para hover */
+            --border-radius: 8px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--color-bg-dark);
+            color: var(--color-text-light);
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: var(--color-accent-purple);
+            border-bottom: 3px solid var(--color-accent-purple);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .source-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .source-item {
+            background-color: var(--color-bg-card);
+            border-left: 5px solid var(--color-accent-purple);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .source-item:hover {
+            transform: translateY(-3px); /* Efecto de elevación sutil */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .source-title {
+            font-size: 1.4em;
+            margin: 0 0 5px 0;
+            color: var(--color-text-light);
+        }
+
+        .source-description {
+            font-size: 0.9em;
+            color: var(--color-text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .source-link {
+            display: inline-block;
+            font-size: 1em;
+            color: var(--color-accent-purple);
+            text-decoration: none; /* Quita el subrayado por defecto */
+            padding: 5px 0;
+            transition: color 0.2s;
+            font-weight: bold;
+        }
+
+        .source-link:hover {
+            color: var(--color-accent-hover);
+            text-decoration: underline; /* Muestra el subrayado al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Fuentes de Consulta Utilizadas</h1>
+
+        <ul class="source-list">
+            
+            <li class="source-item">
+                <h3 class="source-title">Título del Artículo (Encabezado)</h3>
+                <p class="source-description">Breve descripción de lo que se trata esta fuente o por qué es importante (Opcional).</p>
+                <a href="https://ejemplo1.com/documento-principal" target="_blank" class="source-link">Ir a la Fuente 1 (ejemplo1.com/...)</a>
+            </li>
+            
+            <li class="source-item">
+                <h3 class="source-title">Estudios sobre Diseño Web Moderno</h3>
+                <p class="source-description">Esta fuente contiene la metodología de los colores oscuros y la accesibilidad.</p>
+                <a href="https://ejemplo2.com/diseno-web-moderno" target="_blank" class="source-link">Ir a la Fuente 2 (ejemplo2.com/...)</a>
+            </li>
+            
+            <li class="source-item">
+                <h3 class="source-title">Documentación Oficial de HTML5 y CSS3</h3>
+                <p class="source-description">La referencia principal para la sintaxis y las mejores prácticas en el desarrollo web.</p>
+                <a href="https://ejemplo3.com/documentacion-oficial" target="_blank" class="source-link">Ir a la Fuente 3 (ejemplo3.com/...)</a>
+            </li>
+            
+            </ul>
+    </div>
+</body>
+</html>
